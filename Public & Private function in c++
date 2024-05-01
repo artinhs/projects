@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+class MyClass{
+	private:
+		int a,b;
+	public:
+		MyClass(int i,int j){a=i; b=j;}
+		friend void sum(MyClass x);
+};
+void sum(MyClass x)
+{
+	cout<<x.a<<" "<<x.b<<endl<<"sum="<<x.a+x.b;
+	
+}
+int main()
+{
+	MyClass o(5,6);
+	sum (o);
+	return 0;
+}

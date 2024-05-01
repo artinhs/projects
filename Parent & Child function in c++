@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+class parent{
+	public:
+	string lastname;
+	parent()
+	{
+		cout<<"please enter your last name:"<<endl;
+		cin>>lastname;
+	}
+};
+class child:public parent{
+	public:
+		string firstname;
+		child()
+		{
+			cout<<"please enter your first name:"<<endl;
+			cin>>firstname;
+		}
+};
+void printlastname(){
+	cout<<"Hosseini";
+}
+int main()
+{
+	parent o1;
+	child o2;
+	cout<<"your name is :"<<" "<<o2.firstname<<" "<<o1.lastname<<endl;
+	return 0;
+}

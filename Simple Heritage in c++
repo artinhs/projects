@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+class parent{
+	private:
+		int x;
+	protected:
+		int y;
+	public:
+		void fun(){
+			x=10;
+			y=20;
+			cout<<"x="<<" "<<x<<"y="<<" "<<y<<endl;
+		}
+};
+class child:public parent{
+	public:
+		child(){
+			x=10;
+			y=20;
+			cout<<"x="<<" "<<x<<"y="<<" "<<y<<endl;
+			fun();
+		}
+};
+int main()
+{
+	child c;
+	return 0;
+	
+}
+for (int i=0;i>=10;i++)
+obj [i]

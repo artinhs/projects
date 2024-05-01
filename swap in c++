@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+template <class x>
+void swap(x & a,x & b)
+{
+	x z;
+	z=a;
+	a=b;
+	b=z;
+}
+int main()
+{
+	int i=10,j=20;
+	char ch1 = 'm', ch2 ='n';
+	cout<<"original i,j: "<<i<<" "<<j<<endl;
+	swap(i,j);
+	cout<<"swaped i,j: "<<i<<" "<<j<<endl;
+	cout<<"original ch1,ch2: "<<ch1<<" "<<ch2<<endl;
+	swap(ch1,ch2);
+	cout<<"swaped ch1,ch2 is:"<<ch1<<" "<<ch2<<endl;
+	return 0;
+}
